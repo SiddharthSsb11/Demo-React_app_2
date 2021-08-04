@@ -7,7 +7,7 @@ import ErrorModal from "../UI/ErrorModal";
 const AddUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
-  const [errorMessage, setErrorMessage] = useState();
+  const [errorMessage, setErrorMessage] = useState();//undefined initially
 
   const usernameChangeHandler = (e) => {
     setEnteredUsername(e.target.value);
